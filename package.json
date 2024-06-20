@@ -11,6 +11,7 @@
     "@fawmi/vue-google-maps": "^0.9.79",
     "bulma": "^1.0.1",
     "chart.js": "^4.4.3",
+    "chartjs-adapter-date-fns": "^3.0.0",
     "core-js": "^3.8.3",
     "firebase": "^10.12.2",
     "flowbite": "^2.3.0",

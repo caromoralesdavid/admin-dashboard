@@ -7,7 +7,7 @@ import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import MetricsView from '@/views/MetricsView.vue';
 import UsersView from '@/views/UsersView.vue';
 import ProfileView from '@/views/ProfileView.vue';
-import ReportsView from '@/views/ReportsView.vue';
+import ReportesComponent from '@/components/ReportesComponent.vue';
 import SettingsView from '@/views/SettingsView.vue';
 import LogoutView from '@/views/LogoutView.vue';
 
@@ -41,17 +41,35 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/home',
-    name: 'Home',
-    component: HomeView
+    path: '/metrics',
+    name: 'Metrics',
+    component: MetricsView
   },
-  { path: '/metrics', component: MetricsView },
-  { path: '/users', component: UsersView },
-  { path: '/profile', component: ProfileView },
-  { path: '/reports', component: ReportsView },
-  { path: '/settings', component: SettingsView },
-  { path: '/logout', component: LogoutView },
-
+  {
+    path: '/users',
+    name: 'Users',
+    component: UsersView
+  },
+  {
+    path: '/profile',
+    name: 'Profile',
+    component: ProfileView
+  },
+  {
+    path: '/reports/open',
+    name: 'ReportsOpen',
+    component: ReportesComponent
+  },
+  {
+    path: '/settings',
+    name: 'Settings',
+    component: SettingsView
+  },
+  {
+    path: '/logout',
+    name: 'Logout',
+    component: LogoutView
+  },
 ];
 
 const router = createRouter({

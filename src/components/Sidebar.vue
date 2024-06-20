@@ -1,8 +1,6 @@
 <template v-if="user">
   <aside class="menu sidebar">
-    <p class="menu-label">
-      General
-    </p>
+    <p class="menu-label">General</p>
     <ul class="menu-list">
       <li>
         <router-link to="/dashboard" class="is-active">
@@ -10,12 +8,10 @@
         </router-link>
       </li>
     </ul>
-    <p class="menu-label">
-      Administración
-    </p>
+    <p class="menu-label">Administración</p>
     <ul class="menu-list">
       <li>
-        <router-link to="/Metrics">
+        <router-link to="/metrics">
           <i class="fas fa-table"></i> Métricas
         </router-link>
       </li>
@@ -47,9 +43,7 @@
         </ul>
       </li>
     </ul>
-    <p class="menu-label">
-      About
-    </p>
+    <p class="menu-label">About</p>
     <ul class="menu-list">
       <li>
         <router-link to="/settings">
@@ -70,7 +64,6 @@ export default {
   name: 'Sidebar'
 }
 </script>
-
 
 <style>
 .sidebar {
